@@ -1,0 +1,21 @@
+THREADS = 16
+THREAD_DELAY = 0.001
+ENV = 'CartPole-v0'
+
+RUN_TIME = 60
+
+OPTIMIZERS = 4
+
+MIN_BATCH = 32
+LEARNING_RATE = 5e-3
+
+LOSS_V = .5  # v loss coefficient
+LOSS_ENTROPY = .01  # entropy coefficient
+
+GAMMA = 0.99
+N_STEP_RETURN = 5
+GAMMA_N = GAMMA ** N_STEP_RETURN
+
+EPS_START = 0.4
+EPS_STOP = .15
+EPS_STEPS = 75000
